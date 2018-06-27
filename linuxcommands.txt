@@ -1,0 +1,169 @@
+LINUX COMMANDS
+
+(/) : ROOT
+(~) : HOME
+
+$ : variable
+eg : x=100
+     echo $x
+     o/p : 100
+
+$cd : change directory
+$cd .. : one step before
+$cd - : home
+$cd dirname : directory
+$cd . : current directory
+
+$man : commands will be displayed
+
+$ls : list
+$ls -l : long list will be displayed
+$ls -ltr : ordered list/most recent
+    -l : list
+    _t : time
+    -r : recursive
+$ls -lt : time, newest first
+$ls -lr : recursive printing including sub directories
+$ls -a : to show hidden files
+$ls -r : list files in reverse order
+$ls -la : long list of hidden files
+$ls -ld : list of the directories
+$ls path : content in the path will be displayed
+$ls --author : displays content along with its owner
+$ls -S : sorts and lists all the contents in the specfied directory by size
+
+$pwd : present working directory
+
+$clear : to clear
+
+$touch : empty file creation
+(>) : file creation
+eg: >mom
+
+$cat : it displays contents of the file
+
+$head : takes to the number of lines from the top
+
+$tail : takes the number of lines from the bottom
+
+$chmod : / : to change mode
+eg: chmod 777 neeha
+7 : read
+7 : write
+7 : execute
+neeha : user/group/others
+
+$chgrp/chown : to change the group name
+
+$l -ls -ltr | head -n
+
+$sudo -i : root/ or used before/ sudo useradd username
+
+$grep string filename:
+	-r 
+	-i
+	-v
+	-n
+	-vi
+	-ni
+
+$egrep string, string, filename
+
+$PS1
+
+$export
+
+$sudo -i : to create a user in the root
+$history : to see all the commands
+
+
+vi shortcuts
+i : insert
+esc : to come out of any command
+:wq : save and exit
+:q! : exit
+:q :exit (but in some cases it may not work)
+^ : beginning of the line
+$ : end of the line
+d^ : to get to the beginning of the line
+E : to get to the end of the line
+L : bottom of the screen
+K : to UNBOUND
+H : (head( to the top of the screen
+j : is used to go to the next line (one step)
+:setnumber : to set the number
+a : insert text before the cursor
+A : insert text after the cursor
+I : insert text before beginning the next line
+zero(0) : goes to the first position of the current line
+'o' : goes to the next line and inserts (open line below)
+'O' : goes to the pervious line and inserts (open line above)
+
+Copy/Paste:
+copy : 3yyp
+       yy3p
+       (no.of lines to be copied)
+paste : p
+
+Delete:
+:%d : to delete all the lines
+dw : delete a word
+dd : delete a line
+u : is to undo delete
+x : delete line
+X : deletes a character a time
+d$ /D : deletes the line after the cursor
+d^ : deletes the characters before the cursor
+:/s : oldname /newname
+    : :s /oldname /newname (to replace the string)
+
+Change from one user to another user:
+goto root from current user : sudo -i
+if you know the available users by using { su -username} and enter the given username
+if you want to see all available users : compegn -u
+
+J : to join two lines
+/n : eg- /ab takes you to respective /ab
+/N :
+:n : gives the line number
+/A : search the stream
+:r : insert file after current line
+:sh : execute shell commands (ctrl+d)
+:set no number : don't show line numbers
+:%s/A/B : to replace
+w : one word forward
+; : repeat find
+fc : find c
+z : cursor at the top
+z. : cursor in the middle
+z- : cursor at the bottom
+
+Window motions
+ctrl ^d : scroll down
+ctrl+u : scroll up
+ctrl+f : page forward
+ctrl+b : page backward
+
+Move text from old file to new file:
+vi old
+a.10yy
+:e : edit new file
+
+Parameters
+:setall : show all values of all possible parameters
+:setlist : show invisible characters
+:setnolist : don't show invisible characters
+:setnumber : show line numbers
+:setnonumber : don't show line numbers
+:setshowmatch : show matching sets of paranthesis as they are typed
+:setshowmode : display mode on last line of screen
+
+
+To install anything on linux
+$sudo apt-get install http
+To change and add a groupname
+$sudo groupadd (newname)
+$sudo useradd : newname
+to change name
+$sudo chgroup newname pop(directory)
+
